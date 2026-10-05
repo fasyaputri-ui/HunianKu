@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Dashboard Admin - HunianKu</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="dashboard">
+  <aside class="sidebar">
+    <div class="side-logo">HunianKu</div>
+    <div class="menu-title">Menu Utama</div>
+    <a class="menu-item active" href="dashboard.html">&#x25A6; &nbsp;Dashboard</a>
+    <a class="menu-item" href="#properties">&#x25A7; &nbsp;Properti</a>
+    <a class="menu-item" href="#categories">&#x25EB; &nbsp;Categories</a>
+    <a class="menu-item" href="#transactions">&#x25A4; &nbsp;Transactions</a>
+    <div class="menu-title">Pengaturan</div>
+    <a class="menu-item" href="#">&#x2699; &nbsp;Pengaturan</a>
+    <a class="menu-item" href="index.html">&#x21A9; &nbsp;Keluar</a>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><h1>Halo, Admin! </h1><p>Kelola data HunianKu dari satu tempat.</p></div><div class="profile"><span>Admin HunianKu</span><span class="avatar">A</span></div></header>
+    <section class="content">
+      <div class="stats">
+        <div class="stat"><div class="stat-top"><span>Total Properti</span><b>&#x2302;</b></div><strong>32</strong></div>
+        <div class="stat"><div class="stat-top"><span>Categories</span><b>&#x25EB;</b></div><strong>4</strong></div>
+        <div class="stat"><div class="stat-top"><span>Transactions</span><b>&#x25A4;</b></div><strong>18</strong></div>
+        <div class="stat"><div class="stat-top"><span>User Aktif</span><b>&#x2659;</b></div><strong>124</strong></div>
+      </div>
+
+      <div class="two-col">
+        <div class="card" id="properties">
+          <div class="card-head"><h2>Data Properti</h2><a href="#">+ Tambah Properti</a></div>
+          <div class="table-wrap"><table class="data-table">
+            <thead><tr><th>PROPERTI</th><th>KATEGORI</th><th>HARGA</th><th>STATUS</th><th>AKSI</th></tr></thead>
+            <tbody>
+              <tr><td><img class="thumb" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=120&q=70">Kost Nyaman Arjuno</td><td>Kos</td><td>Rp850.000/bln</td><td><span class="status success">Aktif</span></td><td><div class="crud-actions"><button class="icon-btn">Edit</button><button class="icon-btn">Hapus</button></div></td></tr>
+              <tr><td><img class="thumb" src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=120&q=70">City View Apartment</td><td>Apartemen</td><td>Rp2.500.000/bln</td><td><span class="status success">Aktif</span></td><td><div class="crud-actions"><button class="icon-btn">Edit</button><button class="icon-btn">Hapus</button></div></td></tr>
+              <tr><td><img class="thumb" src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=120&q=70">Rumah Asri Family</td><td>Rumah</td><td>Rp35 jt/thn</td><td><span class="status pending">Review</span></td><td><div class="crud-actions"><button class="icon-btn">Edit</button><button class="icon-btn">Hapus</button></div></td></tr>
+            </tbody>
+          </table></div>
+        </div>
+
+        <div class="card" id="categories">
+          <div class="card-head"><h2>Categories</h2><a href="#">+ Tambah</a></div>
+          <div class="quick-list">
+            <div class="quick-item"><b>Kos</b><span>14 properti</span></div>
+            <div class="quick-item"><b>Apartemen</b><span>7 properti</span></div>
+            <div class="quick-item"><b>Rumah</b><span>8 properti</span></div>
+            <div class="quick-item"><b>Homestay</b><span>3 properti</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="transactions">
+        <div class="card-head"><h2>Recent Transactions</h2><a href="#">Lihat Semua</a></div>
+        <div class="table-wrap"><table class="data-table">
+          <thead><tr><th>TRANSACTION ID</th><th>USER</th><th>PROPERTI</th><th>TANGGAL</th><th>TOTAL</th><th>STATUS</th><th>AKSI</th></tr></thead>
+          <tbody>
+            <tr><td>#TRX-1024</td><td>Siti Rahma</td><td>Kost Nyaman Arjuno</td><td>03 Okt 2026</td><td>Rp850.000</td><td><span class="status success">Selesai</span></td><td><button class="icon-btn">Detail</button></td></tr>
+            <tr><td>#TRX-1023</td><td>Andi Pratama</td><td>City View Apartment</td><td>02 Okt 2026</td><td>Rp2.500.000</td><td><span class="status pending">Pending</span></td><td><button class="icon-btn">Detail</button></td></tr>
+            <tr><td>#TRX-1022</td><td>Rina Putri</td><td>Rumah Asri Family</td><td>01 Okt 2026</td><td>Rp35.000.000</td><td><span class="status success">Selesai</span></td><td><button class="icon-btn">Detail</button></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </section>
+  </main>
+</div>
+</body></html>
